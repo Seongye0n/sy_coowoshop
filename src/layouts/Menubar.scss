@@ -1,0 +1,36 @@
+.navbar{
+    position:fixed;
+    top:0.3vh;
+    right:0vw;
+    width:9vw;
+    height:12vw;
+    background-color: #d8ccb4;
+    border: 2px solid #d3a875;
+    border-radius: 25px;
+}
+.navbar.active{
+    z-index:1;
+}
+
+.navbar > ul{
+    margin-top:10%;
+    list-style: none;
+    font-size:1.1rem;
+    font-weight: bold;
+}
+.navbar>ul>li{
+    margin-top:2%;
+    margin-left:-30%;
+    cursor: pointer;
+    &:hover{
+        color: #d3a875;
+    }
+}
+
+.navbar>p{
+    font-size:0.9rem;
+    display:inline;
+    top:7%;
+    margin-left:8%;
+    bottom:0;
+}

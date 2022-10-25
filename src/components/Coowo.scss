@@ -1,0 +1,39 @@
+.Coowo{
+    position:absolute;
+    top:15vh;
+    width:100%;
+    height:80vh;
+    overflow: hidden;
+}
+.MainImgs{
+    position:relative;
+    width:500vw;
+    height:100%;
+    transition: transform 0.8s; //슬라이드 효과
+}
+.MainImg{
+    float:left;
+    width:100vw;
+    height:100%;
+}
+.MainImg img{
+    width:100%;
+    height:100%;
+}
+
+.ButtonContainer{
+    position:absolute; 
+    width:100vw;
+    bottom:0;
+    padding-bottom:2%;
+    text-align:center;
+    z-index:1;
+}
+.Mainbutton{
+    cursor: pointer;
+    border:none;
+    width:0.9rem;
+    height:0.9rem;
+    margin-left:1%;
+    border-radius:50%;
+}
