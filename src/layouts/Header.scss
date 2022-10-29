@@ -47,11 +47,12 @@ p{
     margin-right:4vw;
     display: flex;
 }
-.login div{
-    width:5vw;
+.login>.join{
+    padding-left:1vw;
     font-size:1rem;
     -webkit-text-stroke:1px#d8ccb4;
     color: #d8ccb4;
+    cursor: pointer;
     &:hover{
         // color : #8c8b89;
         font-weight: bold;

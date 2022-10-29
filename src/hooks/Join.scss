@@ -1,0 +1,30 @@
+.joinForm>p{
+    display:block;
+    float:left;
+    width:100%;
+    margin-top:1vh;
+}
+.joinForm label{
+    float:left;
+    position: relative;
+    font-size: 1.2rem;
+    width:30%;
+    text-align: right;
+}
+.joinForm input{
+    float:left;
+    width:40%;
+    font-size: 1rem;
+    margin-left:3%;
+    font-family: '맑은고딕';
+    color: #8c8b89;
+    border:2px solid #d3a875;
+}
+
+.joinBtn{
+    float: right;
+    color: #d3a875;
+    background-color: #ffffff;
+    border: 2px solid #d3a875;
+    border-radius: 50px;
+}

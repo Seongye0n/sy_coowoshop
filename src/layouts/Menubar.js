@@ -15,7 +15,7 @@ const Menubar = () => {
     const handler = () => {
         setScrollY(window.pageYOffset); //window 스크롤 값을 setScrollY에 저장함.
     }
-    
+
     return(
         <div className={ScrollY < 100 ? 'navbar' : 'navbar active'}>
             <ul>
@@ -25,8 +25,6 @@ const Menubar = () => {
                 <li style={1570 <= ScrollY? {color:"#d3a875"} : {color:"#8c8b89"}}><Link to='4' spy={true} smooth={true}>News</Link></li>
                 <li style={1570 <= ScrollY? {color:"#d3a875"} : {color:"#8c8b89"}}><Link to='4' spy={true} smooth={true}>Price</Link></li>
             </ul>
-                <p>회원가입</p>
-                <p>로그인</p>
         </div>
     );
 }
