@@ -1,18 +1,6 @@
 import React, {useState} from 'react';
 import './Reservation.scss';
 import Reservation2 from '../hooks/Reservation2';
-// import axios from 'axios';
-// import QueryString from 'querystring'
-
-// axios({
-//     method:'post', //method: 데이터 통신하는 방식
-//     url:'https://kimgtae12.cafe24.com/ajax/ajax_join_update.php',
-//     data:QueryString.stringify({contact:'연이2',email:'이메일'}),
-// })
-// .then(res=>res.data)
-// .then(data=>{
-//     console.log(data);
-// })
 
 const Reservation = (props) => {
 

@@ -27,4 +27,11 @@
     background-color: #ffffff;
     border: 2px solid #d3a875;
     border-radius: 50px;
+    cursor: pointer;
+    &:hover{
+        color: #8c8b89;
+        font-Weight:bold;
+        background-color: #d8ccb4;
+        border:2px solid #d3a875;
+    }
 }

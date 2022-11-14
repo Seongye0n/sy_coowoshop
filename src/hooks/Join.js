@@ -181,7 +181,7 @@ const Login = (props) => {
                 <input type='password' id='pw' value={pw} onChange={(e)=>setPw(e.target.value)}/></p>
             </form>
             {/* 로그인 실패시, 회원가입하러가기 또는 로그인 페이지 이동 (+입력값이 null일 때도, 회원가입하러가기 또는 로그인 페이지 이동) */}
-            <button style={{margin:'3vh 40% 0vh 1vw', padding:'0.5% 3%'}} onClick={()=>{close(false)}} className='joinBtn'>취소</button>
+            <button stype='button' style={{margin:'3vh 40% 0vh 1vw', padding:'0.5% 3%'}} onClick={()=>{close(false)}} className='joinBtn'>취소</button>
             <button style={{margin:'3vh 0vw 0vh 0vw', padding:'0.5% 3%'}} className='joinBtn' onClick={()=>login()}>로그인</button>
             </div>
         </div>
