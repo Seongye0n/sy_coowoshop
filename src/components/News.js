@@ -33,7 +33,7 @@ const News = () => {
         <div className='News' id='4'> 
             <div className='NewsDiv'>
                 <div className='item'>
-                    <ul className='IconUl'><p className='icon'><img src="/icon.png" alt='icon_img'/>공지사항
+                    <ul className='IconUl'><p className='icon'><img src={process.env.PUBLIC_URL + '/icon.png'} alt='icon_img'/>공지사항
                         <button onClick={()=>handler('notice')}>... 더보기</button></p>
                         {component === 'notice'? <Notice close={setComponent}/> : null}
                         <li><a>공지사항1</a></li>
@@ -43,7 +43,7 @@ const News = () => {
                     </ul>
                 </div>
                 <div className='item'>
-                    <ul className='IconUl'><p className='icon'><img src="/icon.png" alt='icon_img'/>이벤트
+                    <ul className='IconUl'><p className='icon'><img src={process.env.PUBLIC_URL + '/icon.png'} alt='icon_img'/>이벤트
                         <button  onClick={()=>handler('event')}>... 더보기</button></p>
                         {component === 'event'? <Event close={setComponent}/> : null}
                         <li><a>이벤트1</a></li>
@@ -53,7 +53,7 @@ const News = () => {
                     </ul>
                 </div>
                 <div className='item'>
-                    <ul className='IconUl'><p className='icon'><img src="/icon.png" alt='icon_img'/>가격</p>
+                    <ul className='IconUl'><p className='icon'><img src={process.env.PUBLIC_URL + '/icon.png'} alt='icon_img'/>가격</p>
                         <li><a onClick={()=>handler('small')} >소형견 요금</a></li>
                         <li><a onClick={()=>handler('medium')}>중형견 요금</a></li>
                         <li><a onClick={()=>handler('special')}>특수견 요금</a></li>

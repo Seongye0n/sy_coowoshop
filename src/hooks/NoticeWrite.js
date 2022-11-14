@@ -21,7 +21,7 @@ const NoticeWrite = (props) => {
     return(
         <div className='modal'>
             <div className='modal2' >
-                <h2><img src="/icon.png" alt='icon_img'/><span>공지사항</span></h2>
+                <h2><img src={process.env.PUBLIC_URL + '/icon.png'}  alt='icon_img'/><span>공지사항</span></h2>
                 <h4 style={{display:'inline-block', marginRight:'1vw', color:'#d3a875'}}>제목 </h4>
                     <input type='text' style={{width:'80%'}} onChange={getValue} name='noticeTitle'/>
                 <h4 style={{marginTop:'0%', color:'#d3a875'}}>내용</h4>

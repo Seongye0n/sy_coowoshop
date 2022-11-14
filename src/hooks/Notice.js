@@ -11,7 +11,7 @@ const Notice = (props) => {
     return(
         <div className='modal'>
             <div className='modal2'>
-                <h2><img src="/icon.png" alt='icon_img'/><span>공지사항</span></h2>
+                <h2><img src={process.env.PUBLIC_URL + '/icon.png'}  alt='icon_img'/><span>공지사항</span></h2>
                     <ul>
                         <li>준비중입니다.</li>
                         <li>준비중입니다.</li>

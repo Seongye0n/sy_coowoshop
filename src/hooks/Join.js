@@ -101,7 +101,7 @@ const Join = (props) => {
     return(
         <div className='modal'>
             <div className='modal2'>
-            <h2><img src="/icon.png" alt='icon_img'/><span>회원가입</span></h2>
+            <h2><img src={process.env.PUBLIC_URL + '/icon.png'}  alt='icon_img'/><span>회원가입</span></h2>
             <form className='joinForm'>
                 <p><label htmlFor='email'>이메일: </label> {/* for과 연결하고 싶은 input의 id를 지정해주면됨. */}
                 <input type='text' id='email' placeholder='이메일 입력' value={email} onChange={(event)=>{
@@ -172,7 +172,7 @@ const Login = (props) => {
     return(
         <div className='modal'>
             <div className='modal2'>
-            <h2><img src="/icon.png" alt='icon_img'/><span>로그인</span></h2>
+            <h2><img src={process.env.PUBLIC_URL + '/icon.png'}  alt='icon_img'/><span>로그인</span></h2>
             <form className='joinForm'>
                 <p><label htmlFor='id'>아이디: </label>
                 <input type='text' id='id' value={id} onChange={(e)=>{setId(e.target.value)}}/>

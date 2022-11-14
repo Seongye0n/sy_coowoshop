@@ -179,7 +179,7 @@ const Price = (props) => {
     return(
         <div className='modal'>
             <div className='modal2'>
-                <h2><img src="/icon.png" alt='icon_img'/>
+                <h2><img src={process.env.PUBLIC_URL + '/icon.png'}  alt='icon_img'/>
                     <span>
                         { typeName === '추가 요금' ? typeName: typeName + ' 가격표'}
                         {/* {typeName} 가격표 */}

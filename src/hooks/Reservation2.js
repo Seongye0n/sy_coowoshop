@@ -68,7 +68,7 @@ const Reservation2 = (props) => {
     return(
         <div className='modal'>
             <div className='modal2'>
-                <h2><img src="/icon.png" alt='icon_img'/><span>예약하기</span></h2>
+                <h2><img src={process.env.PUBLIC_URL + '/icon.png'}  alt='icon_img'/><span>예약하기</span></h2>
                 <form className='ReservationForm'>
                     <p><label htmlFor='name' style={styleLabel}>이름: </label> {/* for과 연결하고 싶은 input의 id를 지정해주면됨. */}
                         <input type='text' id='name' placeholder='이름 입력' value={name} style={styleInput} onChange={(event)=>{

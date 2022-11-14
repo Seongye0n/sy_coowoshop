@@ -9,7 +9,7 @@ const Movie = (props) => {
     return(
         <div className='modal'>
             <div className='modal2'>
-                <h2><img src="/icon.png" alt='icon_img'/><span>애견미용동영상</span></h2>
+                <h2><img src={process.env.PUBLIC_URL + '/icon.png'}  alt='icon_img'/><span>애견미용동영상</span></h2>
                     <div className='container'>
                         <div className='item'></div>
                         <div className='item'></div>
