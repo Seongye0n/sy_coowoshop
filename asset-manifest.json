@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/sy_coowoshop/static/css/main.003936fa.css",
+    "main.js": "/sy_coowoshop/static/js/main.01b4075a.js",
+    "static/media/Main2.jpg": "/sy_coowoshop/static/media/Main2.10c5e60aa2797ab42a1c.jpg",
+    "static/media/Main1.jpg": "/sy_coowoshop/static/media/Main1.112479c43979416e02f5.jpg",
+    "static/media/Main3.jpg": "/sy_coowoshop/static/media/Main3.4b19eba84ce4631dbb82.jpg",
+    "static/media/Main4.jpg": "/sy_coowoshop/static/media/Main4.d5d48fa33a7819797030.jpg",
+    "index.html": "/sy_coowoshop/index.html",
+    "main.003936fa.css.map": "/sy_coowoshop/static/css/main.003936fa.css.map",
+    "main.01b4075a.js.map": "/sy_coowoshop/static/js/main.01b4075a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.003936fa.css",
+    "static/js/main.01b4075a.js"
+  ]
+}
