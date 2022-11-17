@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.scss';
+import '../style/style.scss';
 import blog from '../images/blog.png';
 import insta from '../images/insta.png';
 import kakao from '../images/kakao.png';

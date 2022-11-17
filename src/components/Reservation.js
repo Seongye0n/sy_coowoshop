@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import './Reservation.scss';
 import Reservation2 from '../hooks/Reservation2';
+import '../style/style.scss';
 
 const Reservation = (props) => {
 

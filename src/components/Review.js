@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Review.scss';
+import '../style/style.scss';
 import Movie from '../hooks/Movie';
 import Review2 from '../hooks/Review2';
 

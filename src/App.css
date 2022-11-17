@@ -1,8 +1,8 @@
 body{
-  position:absolute;
-  width: 100%;
-  margin:0;
+  width:100%;
+  margin:0 auto;
   padding:0;
+  float:left;
   font-family: '돋움체';
 }
 a{

@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import './Join.scss';
-import './Notice.scss';
+import '../style/style.scss';
 import axios from 'axios';
 import QueryString from 'querystring';
 

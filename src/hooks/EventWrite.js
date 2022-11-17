@@ -1,5 +1,5 @@
 import React from 'react';
-import './Notice.scss';
+import '../style/style.scss';
 
 const EventWrite = (props) => {
     

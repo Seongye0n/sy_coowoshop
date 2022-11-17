@@ -1,6 +1,5 @@
 import React from 'react';
-import './Notice.scss';
-import './Movie.scss';
+import '../style/style.scss';
 
 const Review2 = (props) => {
 

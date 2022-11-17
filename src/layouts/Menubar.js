@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import './Menubar.scss';
+import '../style/style.scss';
 import {Link} from "react-scroll";
 
 const Menubar = () => {

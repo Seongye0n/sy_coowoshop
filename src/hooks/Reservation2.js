@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import './Notice.scss'; //modal
-import './Movie.scss'; //grid
+import '../style/style.scss';
 import DaumPostcode from 'react-daum-postcode';
 
 const Reservation2 = (props) => {

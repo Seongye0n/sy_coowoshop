@@ -1,0 +1,929 @@
+//Header
+.Header{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:15vh;
+    text-align: center;
+    background-color:#ffffff;
+    z-index:1;
+}
+
+h1{
+    position: relative;
+    font-size: 2rem;
+    margin-top:5px;
+    color: #d3a875;
+    -webkit-text-stroke:1px #d3a875;
+}
+p{
+    position: relative;
+    margin-top:-20px;
+    font-size: 1.0rem;
+    font-weight:bold;
+    color: #8c8b89;
+}
+
+.nav{
+    float:left;
+    margin-left:1vw;
+    display: flex;
+}
+.nav div{
+    width:15vw;
+}
+.nav div{
+    font-size:1.1rem;
+    -webkit-text-stroke:0.6px#8c8b89;
+    color: #8c8b89;
+    &:hover{
+        color : #d3a875;
+        -webkit-text-stroke:0.6px#d3a875;
+    }
+}
+
+.login{
+    float: right;
+    margin-right:4vw;
+    display: flex;
+}
+.login2{
+    float:'right';
+    margin-right:0;
+}
+.login>.join{
+    padding-left:1vw;
+    font-size:1rem;
+    -webkit-text-stroke:1px#d8ccb4;
+    color: #d8ccb4;
+    cursor: pointer;
+    &:hover{
+        // color : #8c8b89;
+        font-weight: bold;
+        // -webkit-text-stroke:0.6px#8c8b89;
+    }
+}
+@media screen and (max-width:1024px) {
+    .nav{margin-top:-1vh;}
+    .login{margin-top:-1vh;}
+}
+@media screen and (max-width:1023px) {
+    .Header{
+        position:relative;
+        width:100%;
+        height:8vh;
+    }
+    h1{
+        width:100%;
+        font-size: 2.2rem;
+        -webkit-text-stroke: 0px;
+    }
+    .login{
+        position:relative;
+        float:right;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .Header{
+        position:relative;
+        width:100%;
+        height:11vh;
+    }
+    h1{
+        width:100%;
+        height:20%;
+        font-size: 1.5rem;
+        -webkit-text-stroke: 0px;
+    }
+    p{
+        margin-top:2px;
+        margin-bottom:5%;
+        font-size: 0.5rem;
+    }
+    .nav{
+        display:none;
+    }
+    .login>.join{
+        font-size:0.7rem;
+    }
+}
+
+// Menubar
+.navbar{
+    position:fixed;
+    top:0.3vh;
+    right:0vw;
+    padding: 0 8px;
+    background-color: #d8ccb4;
+    border: 2px solid #d3a875;
+    border-radius: 25px;
+}
+.navbar.active{
+    z-index:2;
+}
+
+.navbar > ul{
+    margin-top:10%;
+    list-style: none;
+    font-size:1.1rem;
+    font-weight: bold;
+}
+.navbar>ul>li{
+    margin-top:2%;
+    margin-left:-30%;
+    cursor: pointer;
+    &:hover{
+        color: #d3a875;
+    }
+}
+
+.navbar>p{
+    font-size:0.9rem;
+    display:inline;
+    top:7%;
+    margin-left:8%;
+    bottom:0;
+}
+@media screen and (max-width:1023px) {
+    .navbar{
+        position:relative;
+        top:0;
+        display:none;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+}
+
+
+//Main
+.StyleCoowo{
+    position: relative;
+    top: 15vh;
+    width: 100%;
+    height: 80vh;
+    z-index:0;
+}
+@media screen and (max-width:1023px) {
+    .StyleCoowo{
+        position: relative;
+        top: 0;
+        width: 100%;
+        height:50vw;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+}
+
+
+//Resevation 예약
+.Reservation{
+    position:absolute;
+    top:95vh;
+    width:100%;
+    height:85vh;
+}
+.ResDiv{
+    display:flex;
+    flex-direction: rows;
+    height:90%;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+}
+.ResDiv>.item{
+    width:100%;
+    margin:2%;
+    border: 2px solid #d3a875;
+}
+
+.IconUl>.icon{
+    margin-left:-7%;
+    font-size:1.3rem;
+    color: #d3a875;
+    -webkit-text-stroke:1px #d3a875;
+}
+.IconUl>.icon>img{
+    width:12%;
+    height:100%;
+    margin-right:3%;
+}
+
+.IconUl{
+    padding-top:5%;
+    padding-bottom:5%;
+    padding-right:3%;
+}
+.IconUl > li{
+    font-size: 1rem;
+    margin-top:5%;
+    line-height:22px;
+    color: #8c8b89;
+    font-weight:bold;
+}
+
+.btn{
+    width:200px;
+    height:35px;
+    font-size: 1rem;
+    color: #d3a875;
+    font-weight:bold;
+    background-color: #ffffff;
+    border:2px solid #d3a875;
+    border-radius: 50px;
+    margin-left:43%;
+
+    &:hover{
+        color: #8c8b89;
+        font-weight:bold;
+        background-color: #d8ccb4;
+        border:3px solid #d3a875;
+    }
+}
+@media screen and (max-width:1023px) {
+    .Reservation{
+        position:relative;
+        top:0;
+        width:100%;
+        height:90vh;
+    }
+    .ResDiv{
+        display:grid;
+        margin:2vh 2.5vw 0 2.5vw;
+    }
+    .ResDiv>.item{
+        position:relative;
+        margin:0;
+        margin-bottom:5%;
+        padding:0;
+    }
+    .IconUl>.icon{
+        margin:0 0 0 -2vw;
+        padding:0;
+        padding-bottom: 2%;
+        font-size:1.5rem;
+    }
+    .IconUl>.icon>img{
+        margin-right:2vw;
+        width:6%;
+    }
+    .IconUl{
+        margin:0;
+        padding-top:2%;
+    }
+    .IconUl > li{
+        font-size: 1rem;
+        margin-top:1%;
+        line-height:22px;
+        color: #8c8b89;
+        font-weight:bold;
+    }
+    .btn{
+        left:50%;
+        transform: translateX(-30%);
+        margin-top:3%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .Reservation{
+        height:123vh;
+    }
+    .IconUl>.icon{
+        margin-bottom:5px;
+        font-size:1rem;
+    }
+    .IconUl>.icon>img{
+        width:13%;
+    }
+    .IconUl{
+        padding-left:10%;
+    }
+    .IconUl > li{
+        font-size:0.7rem;
+    }
+    .btn{
+        width:30%;
+        height:3.5%;
+        font-size:0.7rem;
+        left:50%;
+        transform: translateX(-40%);
+        margin-top:14%;
+    }
+}
+
+
+//Review 미용후기
+.Review{
+    position:absolute;
+    top:185vh;
+    width:100%;
+    height:80vh;
+}
+.RevDiv{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:100%;
+}
+.RevDiv>.Revitem{
+    width:auto;
+    height:50%;
+    margin:2vh 4vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.RevDiv>.Revitem>.RevitemTitle{
+    flex: 0.25;
+}
+.RevDiv>.Revitem>.RevitemTitle>.icon{
+    margin:auto;
+    top:50%;
+    transform: translateY(-50%);
+    height:40%;
+    font-size: 1.5rem;
+}
+.RevitemTitle>.icon>img{
+    margin:2%;
+    margin-left:10%;
+    height:70%;
+}
+.RevitemTitle>.icon>span{
+    position:absolute;
+    top:40%;
+    margin-left:7%;
+    transform: translateY(-40%);
+}
+.RevitemTitle>.icon>Button{
+    float:center;
+    margin-left:7%;
+    border-radius:7px;
+    color: #d3a875;
+    background-color: #ffffff;
+    border:2px solid #d3a875;
+
+    &:hover{
+        color: #8c8b89;
+        font-weight:bold;
+        background-color: #d8ccb4;
+        border:2px solid #d3a875;
+    }
+}
+.RevDiv>.Revitem>.Button{
+    flex: 0.05;
+}
+.RevDiv>.Revitem>.NoticeContent{
+    flex: 0.65;
+    display: flex;
+    flex-direction: row;
+}
+.RevDiv>.Revitem>.NoticeContent>div{
+    flex:1;
+    border:2px solid #d3a875;
+    width:100%;
+    height:100%;
+}
+
+.loading{
+    position:relative;
+    float:center;
+    margin:auto;
+    top:50%;
+    transform: translateY(-50%);
+    color: #8c8b89;
+    text-align: center;
+    font-weight: bold;
+    line-height:1.5rem;
+    font-size: 1.1rem;
+}
+.leftbtn{
+    position:relative;
+    background: url(../images/leftbtn.png) no-repeat;
+    background-size: 60%;
+    background-position: center;
+    width:100%;
+    height:20%;
+    top:50%;
+    transform: translateY(-50%);
+    border:none;
+}
+.rightbtn{
+    position:relative;
+    background: url(../images/rightbtn.png) no-repeat;
+    background-size: 60%;
+    background-position: center;
+    width:100%;
+    height:20%;
+    top:50%;
+    transform: translateY(-50%);
+    border:none;
+}
+@media screen and (max-width:1023px) {
+    .Review{
+        position:relative;
+        top:0;
+        width:100%;
+        height:70vh;
+    }
+    .RevDiv>.Revitem{
+        display: grid;
+    }
+    .RevDiv>.Revitem>.RevitemTitle{
+        height:8vh;
+    }
+    .RevDiv>.Revitem>.RevitemTitle>.icon{
+        height:100%;
+    }
+    .RevitemTitle>.icon>img{
+        margin-left:0;
+        margin-right:3vw;
+    }
+    .RevitemTitle>.icon>span{
+        font-size:2rem;
+        margin:0;
+    }
+    .RevitemTitle>.icon>Button{
+        float:right;
+        font-size:1.2rem;
+        margin-right:15vw;
+        margin-top:3vw;
+    }
+    .RevDiv>.Revitem>.Button{
+        display: none;
+    }
+    .RevDiv>.Revitem>.NoticeContent{
+        height:20vh;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .Review{
+        position:relative;
+        top:0;
+        width:100%;
+        height:75vh;
+    }
+    .RevitemTitle>.icon>span{
+        font-size:1.2rem;
+    }
+    .RevitemTitle>.icon>Button{
+        float:right;
+        font-size:0.7rem;
+        margin-right:0;
+        margin-top:6vh;
+    }
+    .RevDiv>.Revitem>.Button{
+        display: none;
+    }
+    .RevDiv>.Revitem>.NoticeContent{
+        height:20vh;
+    }
+    .loading{
+        padding:0px 18px;
+        line-height:17px;
+        font-size:0.7rem;
+    }
+}
+
+
+
+//News 공지사항 및 가격
+.News{
+    position:absolute;
+    top:265vh;
+    width:100%;
+    height:50vh;
+}
+.NewsDiv{
+    display: flex;
+    flex-direction: row;
+    height:100%;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+    margin-top:2vh;
+}
+.NewsDiv>.item{
+    width:100%;
+    height:80%;
+    margin:2%;
+    border: 2px solid #d3a875;
+}
+.NewsDiv>.item>.IconUl>.icon{
+    width:100%;
+    padding-bottom:2%;
+    margin-left:0%;
+}
+
+
+.NewsDiv>.item>.IconUl button{
+    float:right;
+    color: #d3a875;
+    background-color: #ffffff;
+    border:2px solid #d3a875;
+    border-radius: 50px;
+    margin-top:8%;
+    margin-right:5%;
+    padding:0.5% 3.5%;
+
+    &:hover{
+        color: #8c8b89;
+        font-weight:bold;
+        background-color: #d8ccb4;
+        border:2px solid #d3a875;
+    }
+}
+
+.NewsDiv>.item>.IconUl>li{
+    margin-top:3%;
+    margin-left:5%;
+    &:hover{
+        cursor: pointer;
+        color:#d3a875;
+    }
+}
+@media screen and (max-width:1023px) {
+    .News{
+        position:relative;
+        top:0;
+        width:100%;
+        height:30vh;
+    }
+    .NewsDiv>.item>.IconUl{
+        width:100%;
+        margin:0;
+        padding:0;
+        list-style-type: none;
+    }
+    .NewsDiv>.item>.IconUl>.icon{
+        float:left;
+        width:100%;
+        font-size:1.4rem;
+        padding:0;
+        margin:0 0 5% 3%;
+    }
+    .NewsDiv>.item>.IconUl>.icon > img{
+        width:20%;
+        margin-left:5%;
+        margin-right:3%;
+    }
+    .NewsDiv>.item>.IconUl button{
+        float:right;
+        width:45%;
+        font-size:0.85rem;
+        padding:1% 0;
+        margin:5% 5% 0 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .News{
+        height:95vh;
+    }
+    .NewsDiv{
+        display: grid;
+        margin-top:0;
+    }
+    .NewsDiv>.item{
+        width:99%;
+        height:90%;
+        margin:0;
+    }
+    .NewsDiv>.item>.IconUl>.icon{
+        font-size: 1.1rem;
+    }
+    .NewsDiv>.item>.IconUl>.icon > img{
+        width:15%;
+    }
+    .NewsDiv>.item>.IconUl button{
+        width:27%;
+        font-size:0.5rem;
+        padding:1% 0;
+        margin:8% 10% 0 0;
+    }
+}
+
+
+
+//Footer
+.Footer{
+    position:absolute;
+    width:100%;
+    height:13vh;
+    top:315vh;
+    background-color: #8c8b89;
+}
+.Footer img{
+    position:relative;
+    float:right;
+    top:3vh;
+    right:4vw;
+    margin-left:1vw;
+    width:3vw;
+}
+.Footer>span{
+    position:relative;
+    top:5vh;
+    font-weight:bold;
+    color: #d8ccb4;
+    left:40%;
+    transform:translateX(-50%);
+}
+@media screen and (max-width:1023px) {
+    .Footer{
+        position:relative;
+        top:0;
+        height:8vh;
+        width:100%;
+    }
+    .Footer>span{
+        position:relative;
+        top:3vh;
+        font-weight:bold;
+        color: #d8ccb4;
+        left:30%;
+        transform:translateX(0%);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .Footer{
+        height:12vh;
+    }
+    .Footer> a > img{
+        width:8.5%;
+        margin-top:-3%;
+        margin-left:3%;
+    }
+    .Footer>span{
+        top:4vh;
+        font-weight:bold;
+        color: #d8ccb4;
+        left:3%;
+        font-size:0.8rem;
+        white-space: nowrap;
+    }
+}
+
+//hooks.Event
+.event{
+    position:fixed;
+    margin: 0;
+    left:0;
+    top:0vh;
+    width:100%;
+    height:100vh;
+    z-index:1;
+    background-color: orange;
+}
+@media screen and (max-width:1023px) {
+    
+}
+
+@media screen and (max-width:767px) {
+    
+}
+
+
+//hooks.Join
+.joinForm>p{
+    display:block;
+    float:left;
+    width:100%;
+    margin-top:1vh;
+}
+.joinForm label{
+    float:left;
+    position: relative;
+    font-size: 1.2rem;
+    width:30%;
+    text-align: right;
+}
+.joinForm input{
+    float:left;
+    width:40%;
+    font-size: 1rem;
+    margin-left:3%;
+    font-family: '맑은고딕';
+    color: #8c8b89;
+    border:2px solid #d3a875;
+}
+
+.joinBtn{
+    float: right;
+    color: #d3a875;
+    background-color: #ffffff;
+    border: 2px solid #d3a875;
+    border-radius: 50px;
+    cursor: pointer;
+    &:hover{
+        color: #8c8b89;
+        font-Weight:bold;
+        background-color: #d8ccb4;
+        border:2px solid #d3a875;
+    }
+}
+@media screen and (max-width:1023px) {
+    
+}
+
+@media screen and (max-width:767px) {
+    
+}
+
+
+//hooks.Movie
+.container{
+    width:auto;
+    height:60%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-right:3vw;
+}
+.container>.item{
+    margin:4% 2%;
+    border:2px solid #d3a875;
+}
+.modal2>p{
+    height:5%;
+    margin-right:3vw;
+    margin-top:2vh;
+}
+.modal2>p>button{
+    height:100%;
+    color: #d3a875;
+    font-weight:bold;
+    background-color: #ffffff;
+    border:2px solid #d3a875;
+    border-radius: 50px;
+    &:hover{
+        color: #8c8b89;
+        font-weight:bold;
+        background-color: #d8ccb4;
+        border:2px solid #d3a875;
+    }
+}
+@media screen and (max-width:1023px) {
+    
+}
+
+@media screen and (max-width:767px) {
+    
+}
+
+//hooks.Notice
+.modal{
+    position:fixed;
+    margin:0;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:3;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.modal2{
+    position:relative;
+    width:40vw;
+    height:90vh;
+    padding-left:3vw;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255);
+    z-index:1;
+    border: 3px solid #d3a875;
+}
+.modal2>h2{
+    height:15vh;
+    text-align: left;
+    margin-top:0;
+    padding-top:2vh;
+}
+.modal2>h2>span{
+    position: relative;
+    top:-2vh;
+    font-size: 2rem;
+    line-height: 10vh;
+}
+.modal2 img{
+    position: relative;
+    height:70%;
+    margin-right:2vw;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.modal2 ul>li{
+    height:3vw;
+    line-height: 6vh;
+}
+@media screen and (max-width:1023px) {
+    .modal2{
+        width:80%;
+        height:70%;
+    }
+    .modal2>h2{
+        height:15%;
+    }
+    .modal2>h2>span{
+        top:15%;
+    }
+    .modal2 img{
+        height:45%;
+        margin-left:10%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    
+}
+
+
+
+//hooks.Price
+.petPrice{
+    float:right;
+    width:7vw;
+    height:3.5vh;
+    display: block;
+    text-align: center;
+    margin-top: -5vh;
+    margin-right: 3vw;
+    font-weight: bold;
+    color:#8c8b89;
+    border-radius: 5px;
+}
+.resultPrice{
+    width:auto;
+    height:65%;
+    margin-top:2vh;
+    margin-right:3vw;
+    margin-bottom:1vh;
+}
+.gridTable{
+    display:grid;
+    width:100%;
+    height:100%;
+    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-rows: 2fr repeat(4, 3fr);
+}
+.gridTable>.item{
+    text-align: left;
+    width:100%;
+    border:1px solid #d3a875;
+}
+.gridTable>.item>.title{
+    top:40%;
+    margin:0;
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
+.gridTable>.item>.content{
+    display: inline-block;
+    width:25%;
+    top:40%;
+    margin:0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.surcharge{
+    display:grid;
+    width:100%;
+    height:100%;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: repeat(9,1fr);
+}
+.surcharge>.item{
+    text-align: left;
+    width:100%;
+    border:1px solid #d3a875;
+}
+.surcharge>.item>.title{
+    margin:0;
+    margin-top:3%;
+    margin-left:18%;
+    text-align: left;
+    font-size: 1.1rem;
+    
+}
+.surcharge>.item>.content{
+    margin:0;
+    margin-top:6%;
+    margin-left:35%;
+    text-align: left;
+    font-size: 1.1rem;
+}
+@media screen and (max-width:1023px) {
+    
+}
+
+@media screen and (max-width:767px) {
+    
+}

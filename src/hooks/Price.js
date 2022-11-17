@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import './Notice.scss'; //modal
-import './Price.scss';
+import '../style/style.scss';
 
 const Price = (props) => {
 

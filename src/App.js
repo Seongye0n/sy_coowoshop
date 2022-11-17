@@ -9,7 +9,7 @@ import Footer from './layouts/Footer';
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <Menubar />
       <Coowo />
@@ -17,7 +17,8 @@ function App() {
       <Review />
       <News />
       <Footer/>
-    </div>
+      {console.log(window.innerWidth)}
+    </>
   );
 }
 

@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import './News.scss';
 import Notice from '../hooks/Notice';
 import Event from '../hooks/Event';
 import Price from '../hooks/Price';
+import '../style/style.scss';
 
 
 const News = () => {

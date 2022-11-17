@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import './Header.scss';
 import {Link} from "react-scroll";
 import {Join, Login} from '../hooks/Join';
+import '../style/style.scss'
 
 const Header = () => {
 
@@ -37,9 +37,9 @@ const Header = () => {
                 <div><Link to='4' spy={true} smooth={true}>Price</Link></div>
             </div>
             {loginCheck ?
-            <div className='login'>
+            <div className='login login2'>
                 <p style={{marginTop:'0'}}>안녕하세요 {sessionId}님</p>
-                <button onClick={()=>{
+                <button className='btn' style={{margin:'0 1vw', width:'5vw', height:'4vh', fontSize:'13px'}} onClick={()=>{
                     sessionStorage.removeItem('id');
                 }}>로그아웃</button>
             </div>
