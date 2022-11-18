@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/sy_coowoshop/static/css/main.a794281b.css",
-    "main.js": "/sy_coowoshop/static/js/main.ad9b1f9f.js",
+    "main.js": "/sy_coowoshop/static/js/main.7f12910a.js",
     "static/media/Main2.jpg": "/sy_coowoshop/static/media/Main2.10c5e60aa2797ab42a1c.jpg",
     "static/media/Main1.jpg": "/sy_coowoshop/static/media/Main1.112479c43979416e02f5.jpg",
     "static/media/Main3.jpg": "/sy_coowoshop/static/media/Main3.4b19eba84ce4631dbb82.jpg",
     "static/media/Main4.jpg": "/sy_coowoshop/static/media/Main4.d5d48fa33a7819797030.jpg",
     "index.html": "/sy_coowoshop/index.html",
     "main.a794281b.css.map": "/sy_coowoshop/static/css/main.a794281b.css.map",
-    "main.ad9b1f9f.js.map": "/sy_coowoshop/static/js/main.ad9b1f9f.js.map"
+    "main.7f12910a.js.map": "/sy_coowoshop/static/js/main.7f12910a.js.map"
   },
   "entrypoints": [
     "static/css/main.a794281b.css",
-    "static/js/main.ad9b1f9f.js"
+    "static/js/main.7f12910a.js"
   ]
 }
