@@ -196,7 +196,7 @@ const Price = (props) => {
                     <div className='resultPrice'>
                         {resultType()}
                     </div>
-                    <button style={{float:'right', padding:'0.5% 3%', margin:'2% 3vw'}} onClick={()=>{close(false)}}>닫기</button>
+                    <button id='btn3' style={{float:'right', padding:'0.5% 3%', margin:'2% 3vw'}} onClick={()=>{close(false)}}>닫기</button>
             </div>
         </div>
     )

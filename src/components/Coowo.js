@@ -24,6 +24,7 @@ const Coowo = () => {
                  loopedSlides={1}
                  autoplay={{ delay: 2500, disableOnInteraction: false}}
                  style={{zIndex:0}}
+                 id={1}
             >
                 <SwiperSlide><img src={Mainimg1} alt='Mainimg01' style={{width:'100%'}}/></SwiperSlide>
                 <SwiperSlide><img src={Mainimg2} alt='Mainimg02' style={{width:'100%'}}/></SwiperSlide>

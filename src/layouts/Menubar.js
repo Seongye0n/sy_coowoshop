@@ -12,18 +12,73 @@ const Menubar = () => {
             window.removeEventListener('scroll', handler); // 종료
         }
     },[])
+
     const handler = () => {
         setScrollY(window.pageYOffset); //window 스크롤 값을 setScrollY에 저장함.
+        console.log(window.pageYOffset);
     }
 
+    const MenuColor = (x, y, value) => { //화면 해상도, Scroll마다 MenuFontColor 변환
+        switch (value){
+            case 1:{
+                if(1023 < x){
+                    if(y < 610) return '#d3a875';
+                    else return '#8c8b89';
+                }else if(768 <= x <= 1023){
+                    if(y < 530) return '#d3a875';
+                    else return '#8c8b89';
+                }else if(x < 768){
+                    if(y < 100) return '#d3a875';
+                    else return '#8c8b89';
+                }
+            } //case1
+            case 2:{
+                if(1023 < x){
+                    if(610 <= y &&  y < 1190) return '#d3a875';
+                    else return '#8c8b89';
+                }else if(768 <= x <= 1023){
+                    if(530 <= y && y <= 1590) return '#d3a875';
+                    else return '#8c8b89';
+                }else if(x < 768){
+                    if(100 <= y && y <= 360) return '#d3a875';
+                    else return '#8c8b89';
+                }
+            }//case2
+            case 3:{
+                if(1023 < x){
+                    if(1190 <= y &&  y < 1460) return '#d3a875';
+                    else return '#8c8b89';
+                }else if(768 <= x <= 1023){
+                    if(1590 < y) return '#d3a875';
+                    else return '#8c8b89';
+                }else if(x < 768){
+                    if(620 < y) return '#d3a875';
+                    else return '#8c8b89';
+                }
+            }//case3
+            default :{
+                if(1023 < x){
+                    if(1460 <= y) return '#d3a875';
+                    else return '#8c8b89';
+                }else if(768 <= x <= 1023){
+                    if(1590 < y) return '#d3a875';
+                    else return '#8c8b89';
+                }else if(x < 768){
+                    if(620 < y) return '#d3a875';
+                    else return '#8c8b89';
+                }
+            }//default
+        }//swich(value)
+    }//MenuColor
+
     return(
-        <div className={ScrollY < 100 ? 'navbar' : 'navbar active'}>
+        <div className={ScrollY < 90 ? 'navbar' : 'navbar active'}>
             <ul>
-                <li style={100 <= ScrollY && ScrollY < 680 ? {color:"#d3a875"} : {color:"#8c8b89"}}><Link to='1' spy={true} smooth={true}>Coowo Shop?</Link></li>
-                <li style={680 <= ScrollY && ScrollY < 1260 ? {color:"#d3a875"} : {color:"#8c8b89"}}><Link to='2' spy={true} smooth={true}>Reservation</Link></li>
-                <li style={1260 <= ScrollY && ScrollY < 1570 ?{color:"#d3a875"} : {color:"#8c8b89"}}><Link to='3' spy={true} smooth={true}>Review</Link></li>
-                <li style={1570 <= ScrollY? {color:"#d3a875"} : {color:"#8c8b89"}}><Link to='4' spy={true} smooth={true}>News</Link></li>
-                <li style={1570 <= ScrollY? {color:"#d3a875"} : {color:"#8c8b89"}}><Link to='4' spy={true} smooth={true}>Price</Link></li>
+                <li style={{color:MenuColor(window.innerWidth,ScrollY, 1)}}><Link to='1' spy={true} smooth={true}>Coowo Shop?</Link></li>
+                <li style={{color:MenuColor(window.innerWidth,ScrollY, 2)}}><Link to='2' spy={true} smooth={true}>Reservation</Link></li>
+                <li style={{color:MenuColor(window.innerWidth,ScrollY, 3)}}><Link to='3' spy={true} smooth={true}>Review</Link></li>
+                <li style={{color:MenuColor(window.innerWidth,ScrollY, 4)}}><Link to='4' spy={true} smooth={true}>News</Link></li>
+                <li style={{color:MenuColor(window.innerWidth,ScrollY, 4)}}><Link to='4' spy={true} smooth={true}>Price</Link></li>
             </ul>
         </div>
     );
