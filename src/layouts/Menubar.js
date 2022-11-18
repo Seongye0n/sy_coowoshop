@@ -15,7 +15,6 @@ const Menubar = () => {
 
     const handler = () => {
         setScrollY(window.pageYOffset); //window 스크롤 값을 setScrollY에 저장함.
-        console.log(window.pageYOffset);
     }
 
     const MenuColor = (x, y, value) => { //화면 해상도, Scroll마다 MenuFontColor 변환
