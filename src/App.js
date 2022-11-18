@@ -17,7 +17,6 @@ function App() {
       <Review />
       <News />
       <Footer/>
-      {console.log(window.innerWidth)}
     </>
   );
 }
